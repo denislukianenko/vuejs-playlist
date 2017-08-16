@@ -1,7 +1,8 @@
 <template>
 	<div>
-		<h1> {{ title }} </h1>
-		<ninjas></ninjas>
+		<add-blog>
+			
+		</add-blog>
 	</div>
 </template>
 
@@ -9,23 +10,25 @@
 
 <script>
 
-	import Ninjas from "./ninja.vue"
+import addBlog from './components/addBlog.vue'
 
-	export default {
-		components: { 'ninjas': Ninjas },
-		data () {
-			return {
-				title:'Ninja app!'
-			}
+export default {
+	components: {
+		"add-blog": addBlog 
+	},
+	data () {
+		return {
+
 		}
 	}
+}
 
 </script>
 
 
 
 <style lang="scss">
-	h1 {
-		color: purple;
+	body {
+		font-family: Roboto, Segoe UI, -apple-system
 	}
 </style>
